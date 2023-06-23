@@ -1,0 +1,8 @@
+{% extends 'base.html'%}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <strong>Please click the conform button to delete this food Item.....</strong>
+    <input type="submit" value="Conform" style="background-color:red;">
+</form>
+{% endblock %}
